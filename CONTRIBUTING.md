@@ -1,85 +1,61 @@
-# Contributing to Pipedream
+# Contributing Guidelines
 
-Our hope is that by providing a generous free tier, you will not only get value from Pipedream, but you will give back to improve the value of the product for the entire community. And there are so many ways you can contribute!
+Thank you for your interest in contributing to our project. Whether it's a bug report, new feature, correction, or additional 
+documentation, we greatly value feedback and contributions from our community.
 
-## Follow, Star & Subscribe
+Please read through this document before submitting any issues or pull requests to ensure we have all the necessary 
+information to effectively respond to your bug report or contribution.
 
-[Follow us](https://twitter.com/pipedream) on Twitter, [star](https://github.com/PipedreamHQ/pipedream) our Github repo and [subscribe](https://www.youtube.com/pipedreamhq) to our YouTube channel.
 
-## Recommend Us!
+## Reporting Bugs/Feature Requests
 
-There’s no better way of supporting Pipedream than recommending us to your friends and colleagues.
+We welcome you to use the GitHub issue tracker to report bugs or suggest features.
 
-## Ask & Answer Questions
+When filing an issue, please check [existing open](https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/issues), or [recently closed](https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aclosed%20), issues to make sure somebody else hasn't already 
+reported the issue. Please try to include as much information as you can. Details like these are incredibly useful:
 
-Do you have a question about Pipedream or how to solve a problem? Please ask us in our [community forum](https://pipedream.com/community)! Chances are that someone else has a similar question, so by helping you, we can help others encountering the same questions and challenges. Or pay it forward and help answer questions from other users.
+* A reproducible test case or series of steps
+* The version of our code being used
+* Any modifications you've made relevant to the bug
+* Anything unusual about your environment or deployment
 
-## Share Your Workflows
 
-If you have a workflow that others may find interesting -- whether it’s just a fun demo or solving a real problem -- make it public and share it in our [community](https://pipedream.com/community/c/show-tell/8) or on Twitter. We may feature it to help new users get started and give others new ideas to try out.
+## Contributing via Pull Requests
+Contributions via pull requests are much appreciated. Before sending us a pull request, please ensure that:
 
-## Create Content
+1. You are working against the latest source on the *master* branch.
+2. You check existing open, and recently merged, pull requests to make sure someone else hasn't addressed the problem already.
+3. You open an issue to discuss any significant work - we would hate for your time to be wasted.
 
-Write a blog post or create a video about how you use Pipedream. Also send it to us so we can list it on our site to send you some traffic! We also love to join live streams — just [contact us](https://pipedream.com/support/)!
+To send us a pull request, please:
 
-## Report Bugs
+1. Fork the repository.
+2. Modify the source; please focus on the specific change you are contributing. If you also reformat all the code, it will be hard for us to focus on your change.
+3. Ensure local tests pass.
+4. Commit to your fork using clear commit messages.
+5. Send us a pull request, answering any default questions in the pull request interface.
+6. Pay attention to any automated CI failures reported in the pull request, and stay involved in the conversation.
 
-Found an issue? [Report it](https://pipedream.com/community/c/bugs/9)
+GitHub provides additional document on [forking a repository](https://help.github.com/articles/fork-a-repo/) and 
+[creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
-## Submit & Vote On Feature Requests
 
-Help us build an amazing product! Submit [feature requests](https://pipedream.com/community/c/feature-requests/7) in our community forum, or [browse existing requests](https://github.com/PipedreamHQ/pipedream/issues) on Github and vote for the features want us to add!
+## Finding contributions to work on
+Looking at the existing issues is a great way to find something to contribute on. As our projects, by default, use the default GitHub issue labels ((enhancement/bug/duplicate/help wanted/invalid/question/wontfix), looking at any ['help wanted'](https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/labels/help%20wanted) issues is a great place to start. 
 
-## Request Apps
 
-Need an app we don’t support? [Request it](https://github.com/PipedreamHQ/pipedream/issues/new?assignees=&labels=app%2C+enhancement&template=app---service-integration.md&title=[APP])
+## Code of Conduct
+This project has adopted the [Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct). 
+For more information see the [Code of Conduct FAQ](https://aws.github.io/code-of-conduct-faq) or contact 
+opensource-codeofconduct@amazon.com with any additional questions or comments.
 
-## Submit Updates to Docs
 
-See a gap or mistake in our [docs](https://github.com/PipedreamHQ/pipedream/tree/master/docs)? Create a PR to submit an update.
+## Security issue notifications
+If you discover a potential security issue in this project we ask that you notify AWS/Amazon Security via our [vulnerability reporting page](http://aws.amazon.com/security/vulnerability-reporting/). Please do **not** create a public github issue.
 
-## Develop Sources and Actions
 
-[Contribute](https://pipedream.com/docs/components/guidelines/) to Pipedream's registry of open source components by:
+## Licensing
 
-- Creating new components (sources and actions)
-- Updating existing components (e.g., fixing bugs, enhancing functionality)
-- Adding or updating metadata (e.g., descriptions, labels)
+See the [LICENSE](https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/blob/master/LICENSE) file for our project's licensing. We will ask you to confirm the licensing of your contribution.
 
-### Setting up your Component Development Environment
-
-Develop components without leaving your browser with the Pipedream Gitpod workspace _without installing any dependencies_.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/PipedreamHQ/pipedream)
-
-1. Fork the official [Pipedream Github Repository](https://github.com/PipedreamHQ/pipedream)
-2. Add your PD API key to your [Gitpod Variables](https://gitpod.io/variables) as `PD_API_KEY`
-3. Open a new Gitpod Workspace with your fork: `https://gitpod.io/#https://github.com/<your-github-username>/pipedream`
-4. Run `pd init app` to scaffold a new app, or make changes to an exisiting one in the `components` directory
-
-This workspace will automatically configure the Pipedream CLI client with your API key. This allows you to interact with the [advanced Pipedream CLI tool](https://pipedream.com/docs/cli) and develop components on the fly.
-
-## The Pull Request process
-
-When contributing new code to this repo, please do so on a new Git branch, and submit a pull request to merge changes on that branch into `master`.
-
-A member of the Pipedream team will automatically be notified when you open a pull request. You can also reach out to us on [our community](https://pipedream.com/community/c/dev/11) or [Slack](https://pipedream.com/support).
-
-### Spellchecking
-
-A spellchecker is automatically run on Markdown files in PRs. If you see this check fail when you open a PR, check the output for misspelled words:
-
-```text
-Misspelled words:
-<htmlcontent> README.md: html>body>p
---------------------------------------------------------------------------------
-lkjsdflkjsdflkjsdflk
---------------------------------------------------------------------------------
-
-!!!Spelling check failed!!!
-Files in repository contain spelling errors
-```
-
-Some technical words (like Pipedream or JavaScript) aren't in an English dictionary. If the spellchecker fails on a real word, please add it to the `.wordlist.txt` file.
-
-The spellchecker configuration can be found in `.spellcheck.yml`. The spellchecking is handled by [this GitHub action](https://github.com/rojopolis/spellcheck-github-actions), which uses [PySpelling](https://facelessuser.github.io/pyspelling/).
+We may ask you to sign a [Contributor License Agreement (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) for larger changes.
